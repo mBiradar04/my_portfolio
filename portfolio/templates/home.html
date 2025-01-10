@@ -2,11 +2,20 @@
 {% load static %}
 
 {% block content %}
-<section class="hero">
-    <h1>Welcome to My Portfolio</h1>
-    <p>Explore the amazing projects and features, inspired by the Mac homepage.</p>
-</section>
-<section class="features">
-    <!-- Add product sections similar to Mac homepage -->
-</section>
+    <div class="container-fluid bg-black">
+        <div class="row align-items-center">
+            <!-- Text Column -->
+            <div class="col-md-6 col-sm-12 home-panel-text">
+                <p>Hello World!!</p>
+                <p>Mahesh Biradar, Software Developer</p>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-md-6 col-sm-12 text-center">
+                <img class="home-panel-image" src="{% static 'images/home_panel.png' %}" alt="Home Panel">
+            </div>
+        </div>
+    </div>
+
+
 {% endblock %}

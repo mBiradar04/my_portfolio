@@ -1,0 +1,64 @@
+/*Change navbar background color*/
+.custom-navbar {
+    background-color: black !important; /* Dark blue */
+}
+
+/* Change navbar text color */
+.navbar-brand {
+    color: #fff; /* White for brand text */
+}
+
+.nav-link {
+    color: #DED6D6FF; /* Light grey for links */
+    transition: color 0.3s ease;
+    font-size: medium;
+}
+
+.navbar-toggler {
+    border-color: #fff; /* White border */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23fff' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    /* White icon */
+}
+
+.navbar-toggler:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle hover effect */
+}
+
+.nav-link:hover {
+    color: #ffffff; /* Gold on hover */
+    transform: scale(1.1); /* Slightly enlarge the nav links */
+}
+.nav-link:focus,
+.nav-link:active {
+    color: #92e1e1; /* Keep the text color same as normal state */
+    background-color: transparent; /* Remove background color */
+    text-decoration: none; /* Optional: Remove underline if applied */
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+.logo {
+    height: auto;
+    width: 5%;
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    margin-left: 30%;
+}
+
+.logo:hover {
+    box-shadow: 0 0 2px 2px rgb(203, 202, 202); /* Green glow effect */
+}
+
+@media (max-width: 768px) {
+    .nav-link {
+        font-size: medium;
+    }
+    .logo {
+        height: 100%;
+        margin-right: 10%;
+    }
+}

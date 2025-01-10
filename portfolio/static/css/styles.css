@@ -4,20 +4,40 @@ body {
     padding: 0;
     color: #333;
 }
-header, footer {
+footer {
     background: #f8f8f8;
     padding: 10px 20px;
     text-align: center;
 }
-.hero {
-    text-align: center;
-    padding: 50px;
-    background: url('../images/hero-background.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
+.home-panel-image {
+    height: auto;
+    max-width: 100%;
+    margin-top: 15%; /* Adjust spacing if needed */
+    margin-right: 20%;
 }
-.features {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
+
+.home-panel-text {
+    color: #9076b2;
+    font-family: "Roboto Light";
+    font-size: xx-large;
+    text-align: left; /* Align text to left */
+    padding: 100px 180px; /* Add horizontal padding to move text right */
+    margin-top: 200px;
+}
+
+/* Background color for the section */
+.bg-black {
+    background-color: black; /* Set background to black */
+    height: 100vh; /* Optional: Make the container fill the viewport height */
+}
+
+@media (max-width: 768px) {
+    .home-panel-text {
+        text-align: center; /* Center text for smaller screens */
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .home-panel-image {
+        margin-top: 5%;
+    }
 }
